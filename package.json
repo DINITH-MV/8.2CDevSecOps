@@ -11,6 +11,7 @@
     "dev": "NODE_OPTIONS=--openssl-legacy-provider nodemon ./app.js",
     "start": "NODE_OPTIONS=--openssl-legacy-provider node app.js",
     "build": "browserify -r jquery > public/js/bundle.js",
+    "coverage": "jest --coverage",
     "cleanup": "mongo express-todo --eval 'db.todos.remove({});'",
     "test": "snyk test"
   },
